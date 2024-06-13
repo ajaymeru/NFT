@@ -525,9 +525,38 @@ a {
 .brse-cate-body-card {
     width: fit-content;
 }
+.brwcatecard-upper.art-card {
+    background-image: url('assets/art-background.png');
+}
 
+.brwcatecard-upper.collectibles-card {
+    background-image: url('assets/collectibles-background.png');
+}
+
+.brwcatecard-upper.music-card {
+    background-image: url('assets/music-background.png');
+}
+
+.brwcatecard-upper.photography-card {
+    background-image: url('assets/photography-background.png');
+}
+
+.brwcatecard-upper.video-card {
+    background-image: url('assets/video-background.png');
+}
+
+.brwcatecard-upper.utility-card {
+    background-image: url('assets/utility-background.png');
+}
+
+.brwcatecard-upper.sport-card {
+    background-image: url('assets/sport-background.png');
+}
+
+.brwcatecard-upper.virtual-worlds-card {
+    background-image: url('assets/virtual-worlds-background.png');
+}
 .brwcatecard-upper {
-    background-image: url(assets/photography.png);
     width: 240px;
     height: 240px;
     border-radius: 20px 20px 0px 0px;
