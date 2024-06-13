@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="navbar">
+            <div class="navbar-left">
+                <img src="assets/nft-logo.png" alt="" srcset="" class="main-logo">
+                <img src="assets/NFTMarketplace.png" alt="" class="site-name">
+            </div>
+            <div class="navbar-right">
+                <a href="">Marketplace</a>
+                <a href="">Rankings</a>
+                <a href="">Connect a wallet</a>
+                <button><i class="fa fa-user-plus"></i> Sign Up</button>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu(this)">
+                <h2>☰</h2>
+            </div>
+
+        </div>
+        <div class="hero-section">
+            <div class="hs-text-butns">
+                <div class="hs-head-sub">
+                    <h2>Discover digital art & Collect NFTs</h2>
+                    <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT
+                        artists.</p>
+                </div>
+                <div class="hs-butns-info">
+                    <div class="hs-rocket-btn">
+                        <button><img src="assets/RocketLaunch.png" alt="">Get Started</button>
+                    </div>
+                    <div class="hs-rocket-info">
+                        <div class="rocket-info">
+                            <h5>240k+ </h5>
+                            <p>Total Sale</p>
+                        </div>
+                        <div class="rocket-info">
+                            <h5>100k+ </h5>
+                            <p>Auctions</p>
+                        </div>
+                        <div class="rocket-info">
+                            <h5>240k+ </h5>
+                            <p>Artists</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hs-highleted-NFT">
+                <img src="assets/spacewalking.png" alt="">
+                <div class="space-walking">
+                    <h5>Space Walking</h5>
+                    <div class="space-wal-person">
+                        <img src="assets/animakid.png" alt="">
+                        <p>Animakid</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- trending collections -->
+    <section class="tending-collections">
+        <div class="tc-head">
+            <h2>Trending Collection</h2>
+            <p>Checkout our weekly updated trending collection.</p>
+        </div>
+        <div class="tc-body">
+            <div class="tc-b-card">
+                <div class="tc-card-parent">
+                    <img src="assets/dog1.png" alt="">
+                </div>
+                <div class="tc-card-parent-styles">
+                    <img src="assets/cat.png" alt="">
+                    <img src="assets/cat2.png" alt="">
+                    <button>1025+</button>
+                </div>
+                <div class="tc-card-info">
+                    <h6>Design Animals</h6>
+                    <div class="tc-card-info-details">
+                        <img src="assets/cat3.png" alt="">
+                        <p>MrFox</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tc-b-card">
+                <div class="tc-card-parent">
+                    <img src="assets/dog1.png" alt="">
+                </div>
+                <div class="tc-card-parent-styles">
+                    <img src="assets/cat.png" alt="">
+                    <img src="assets/cat2.png" alt="">
+                    <button>1025+</button>
+                </div>
+                <div class="tc-card-info">
+                    <h6>Design Animals</h6>
+                    <div class="tc-card-info-details">
+                        <img src="assets/cat3.png" alt="">
+                        <p>MrFox</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tc-b-card">
+                <div class="tc-card-parent">
+                    <img src="assets/dog1.png" alt="">
+                </div>
+                <div class="tc-card-parent-styles">
+                    <img src="assets/cat.png" alt="">
+                    <img src="assets/cat2.png" alt="">
+                    <button>1025+</button>
+                </div>
+                <div class="tc-card-info">
+                    <h6>Design Animals</h6>
+                    <div class="tc-card-info-details">
+                        <img src="assets/cat3.png" alt="">
+                        <p>MrFox</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- top creators -->
+    <section class="top-creators">
+        <div class="top-cre-head">
+            <div class="top-cre-heading">
+                <h3>Top creators</h3>
+                <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+            </div>
+            <div class="top-cre-butn">
+                <button><i class="fa fa-rocket"></i> View Rankings</button>
+            </div>
+        </div>
+        <div class="top-cre-body">
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="top-cre-body-card">
+                <div class="top-cre-body-card-noPerson">
+                    <h6>1</h6>
+                    <img src="assets/keeptrial.png" alt="">
+                </div>
+                <div class="top-cre-body-card-details">
+                    <h5>Keepitreal</h5>
+                    <div class="top-cre-body-sales">
+                        <p>Total Sales:</p>
+                        <h6>34.53 ETH</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Categories -->
+    <section class="Browse-Categories">
+        <div class="brse-cate-head">
+            <h3>Browse Categories</h3>
+        </div>
+        <div class="brse-cate-body">
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+            <div class="brse-cate-body-card">
+                <div class="brwcatecard-upper">
+                    <img src="assets/PaintBrush.png" alt="" class="brwcatecard-upper-abslte">
+                </div>
+                <div class="brwcatecard-lower">
+                    <h5>Art</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Discover More NFTs -->
+    <section class="DiscoverMorNFTs">
+        <div class="DiscoverMorNFTs-upper">
+            <div class="DiscoverMorNFTs-upper-text">
+                <h3>Discover More NFTs</h3>
+                <p>Explore new trending NFTs</p>
+            </div>
+            <div class="DiscoverMorNFTs-upper-butn">
+                <button><i class="fa fa-eye"></i> See All</button>
+            </div>
+        </div>
+        <div class="DiscoverMorNFTs-lower">
+            <div class="DiscoverMorNFTs-cards">
+                <img src="assets/distatantspace.png" alt="">
+                <div class="DiscoverMorNFTs-card-info">
+                    <div class="Discover-card-info-head">
+                        <h5>Distant Galaxy</h5>
+                        <div class="head-person">
+                            <img src="assets/MoonDancer.png" alt="">
+                            <p>MoonDancer</p>
+                        </div>
+                    </div>
+                    <div class="price-bid">
+                        <div class="discover-price">
+                            <p>Price</p>
+                            <h6>1.63 ETH</h6>
+                        </div>
+                        <div class="discover-bid">
+                            <p>Highest Bid</p>
+                            <h6>0.33 wETH</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="DiscoverMorNFTs-cards">
+                <img src="assets/distatantspace.png" alt="">
+                <div class="DiscoverMorNFTs-card-info">
+                    <div class="Discover-card-info-head">
+                        <h5>Distant Galaxy</h5>
+                        <div class="head-person">
+                            <img src="assets/MoonDancer.png" alt="">
+                            <p>MoonDancer</p>
+                        </div>
+                    </div>
+                    <div class="price-bid">
+                        <div class="discover-price">
+                            <p>Price</p>
+                            <h6>1.63 ETH</h6>
+                        </div>
+                        <div class="discover-bid">
+                            <p>Highest Bid</p>
+                            <h6>0.33 wETH</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="DiscoverMorNFTs-cards">
+                <img src="assets/distatantspace.png" alt="">
+                <div class="DiscoverMorNFTs-card-info">
+                    <div class="Discover-card-info-head">
+                        <h5>Distant Galaxy</h5>
+                        <div class="head-person">
+                            <img src="assets/MoonDancer.png" alt="">
+                            <p>MoonDancer</p>
+                        </div>
+                    </div>
+                    <div class="price-bid">
+                        <div class="discover-price">
+                            <p>Price</p>
+                            <h6>1.63 ETH</h6>
+                        </div>
+                        <div class="discover-bid">
+                            <p>Highest Bid</p>
+                            <h6>0.33 wETH</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NFT-Highlight -->
+
+    <section class="NFT-Highlight">
+        <div class="from-down">
+            <div class="magic-mushrooms">
+                <div class="mushroomPerson">
+                    <img src="assets/Shroomie.png" alt="">
+                    <p>Shroomie</p>
+                </div>
+                <h3>Magic Mushrooms</h3>
+                <button><i class="fa fa-eye"></i>See NFT</button>
+            </div>
+
+            <div class="magic-time">
+                <div class="countdown">
+                    <h6>Auction ends in:</h6>
+                    <div class="timer">
+                        <div class="time-unit">
+                            <h3 id="hours">00</h3>
+                            <p>Hours</p>
+                        </div>
+                        <div class="time-unit">
+                            <h3 id="minutes">00</h3>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="time-unit">
+                            <h3 id="seconds">00</h3>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+
+    <section class="how-it-works">
+        <div class="hiw-upper">
+            <h3>How it works</h3>
+            <p>Find out how to get started</p>
+        </div>
+        <div class="hiw-lower">
+            <div class="hiw-card">
+                <div class="hiw-card-img">
+                    <img src="assets/hiw-cardimg.png" alt="">
+                </div>
+                <div class="hiw-card-info">
+                    <h5>Setup Your wallet</h5>
+                    <p>Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top
+                        right corner.</p>
+                </div>
+            </div>
+            <div class="hiw-card">
+                <div class="hiw-card-img">
+                    <img src="assets/hiw-cardimg.png" alt="">
+                </div>
+                <div class="hiw-card-info">
+                    <h5>Setup Your wallet</h5>
+                    <p>Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top
+                        right corner.</p>
+                </div>
+            </div>
+            <div class="hiw-card">
+                <div class="hiw-card-img">
+                    <img src="assets/hiw-cardimg.png" alt="">
+                </div>
+                <div class="hiw-card-info">
+                    <h5>Setup Your wallet</h5>
+                    <p>Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top
+                        right corner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join our weekly digest -->
+    <section class="space-weekly">
+        <!-- <div class="spacePerson"> -->
+        <img src="assets/spacer.png" alt="">
+        <!-- </div> -->
+        <div class="emailsubscribe">
+            <div class="emailsubscribe-info">
+                <h3>Join our weekly digest</h3>
+                <p>Get exclusive promotions & updates straight to your inbox.</p>
+            </div>
+            <div class="emailsubscribe-buuton">
+                <input type="text" placeholder="Enter your email here">
+                <button type="submit"><i class="fa fa-envelope"></i>Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="Footer">
+        <div class="footerupper">
+            <div class="connectpage">
+                <div class="connectpage1">
+                    <img src="assets/nft-logo.png" alt="">
+                    <h3>NFT Marketplace</h3>
+                </div>
+                <div class="connectpage2">
+                    <p>NFT marketplace UI created with Anima for Figma.</p>
+                    <div class="joinCommunity">
+                        <p>Join our community</p>
+                        <div class="sociallinks">
+                            <i class="fa fa-discord"></i>
+                            <i class="fa fa-youtube"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="explore">
+                <h3>Explore</h3>
+                <div class="explore-links">
+                    <p>Marketplace</p>
+                    <p>Rankings</p>
+                    <p>Connect a wallet</p>
+                </div>
+            </div>
+            <div class="emailsubscribe">
+                <div class="emailsubscribe-info">
+                    <h3>Join our weekly digest</h3>
+                    <p>Get exclusive promotions & updates straight to your inbox.</p>
+                </div>
+                <div class="emailsubscribe-buuton">
+                    <input type="text" placeholder="Enter your email here">
+                    <button type="submit"><i class="fa fa-envelope"></i>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footerlower">
+            <p>Ⓒ NFT Market. Use this template freely.</p>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
