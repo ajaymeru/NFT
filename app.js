@@ -1,5 +1,37 @@
 // hamburger
+function toggleMenu() {
+    const navbarRight = document.querySelector('.navbar-right');
+    const hamburger = document.querySelector('.hamburger h2');
+    const isVisible = navbarRight.style.display === 'flex';
 
+
+    if (isVisible) {
+        navbarRight.style.display = 'none';
+        hamburger.innerText = '☰';
+    } else {
+        navbarRight.style.display = 'flex';
+        hamburger.innerText = 'X';
+    }
+}
+// ................signup.............
+
+document.getElementById('signup-button').addEventListener('click', function () {
+    document.getElementById('popup').style.display = 'block';
+    document.getElementById('overlay').style.display = 'block';
+});
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    document.getElementById('overlay').style.display = 'none';
+}
+
+document.getElementById('signup-form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Form submitted!');
+    closePopup();
+});
+
+// ....................................................
 
 function updateCountdown() {
     const now = new Date();
