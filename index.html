@@ -63,7 +63,13 @@
                 </div>
             </div>
             <div class="hs-highleted-NFT">
-                <img src="assets/spacewalking.png" alt="">
+                <img src="assets/spacewalking.png" alt="" onclick="playVideo()">
+
+                <video id="videoPlayer" src="assets/galaxy stock video.mp4" controls autoplay
+                    style="display: none; width: 560px; height: 315px; border-radius: 20px 20px 0 0;">
+                    Your browser does not support the video tag.
+                </video>
+
                 <div class="space-walking">
                     <h5>Space Walking</h5>
                     <div class="space-wal-person">
@@ -144,7 +150,8 @@
                 <p>Checkout Top Rated Creators on the NFT Marketplace</p>
             </div>
             <div class="top-cre-butn">
-                <button><i class="fa fa-rocket"></i> View Rankings</button>
+                <button id="viewRankingsButton" onclick="cardopenclose()"><i class="fa fa-rocket"></i> View
+                    Rankings</button>
             </div>
         </div>
         <div class="top-cre-body">
@@ -163,11 +170,11 @@
             </div>
             <div class="top-cre-body-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>2</h6>
+                    <img src="assets/DigiLAb.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>DigiLab</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
@@ -176,11 +183,11 @@
             </div>
             <div class="top-cre-body-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>3</h6>
+                    <img src="assets/GravityOne.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>GravityOne</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
@@ -189,115 +196,115 @@
             </div>
             <div class="top-cre-body-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>4</h6>
+                    <img src="assets/Juanie.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>Juanie</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>5</h6>
+                    <img src="assets/BlueWhale.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>BlueWhale</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>6</h6>
+                    <img src="assets/mr fox.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>Mr Fox</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>7</h6>
+                    <img src="assets/Shroomie.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>Shroomie</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>8</h6>
+                    <img src="assets/robotica.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>robotica</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>9</h6>
+                    <img src="assets/RustyRobot.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>RustyRobot</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>10</h6>
+                    <img src="assets/animakid.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>animakid</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>11</h6>
+                    <img src="assets/Dotgu.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>Dotgu</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
                     </div>
                 </div>
             </div>
-            <div class="top-cre-body-card">
+            <div class="top-cre-body-card hidden-card">
                 <div class="top-cre-body-card-noPerson">
-                    <h6>1</h6>
-                    <img src="assets/keeptrial.png" alt="">
+                    <h6>12</h6>
+                    <img src="assets/Ghiblier.png" alt="">
                 </div>
                 <div class="top-cre-body-card-details">
-                    <h5>Keepitreal</h5>
+                    <h5>Ghiblier</h5>
                     <div class="top-cre-body-sales">
                         <p>Total Sales:</p>
                         <h6>34.53 ETH</h6>
