@@ -496,7 +496,7 @@
                     <p>Shroomie</p>
                 </div>
                 <h3>Magic Mushrooms</h3>
-                <button><i class="fa fa-eye"></i>See NFT</button>
+                <button id="see-nft-button" onclick="toggleFetchData()"><i class="fa fa-eye"></i>See NFT</button>
             </div>
 
             <div class="magic-time">
@@ -520,7 +520,15 @@
             </div>
         </div>
     </section>
+    <!-- fetch images -->
 
+    <section class="fetching-data">
+        <div class="fetching-data-upper">
+            <h2>NFT Offers</h2>
+            <p>Offer Ends Soon</p>
+        </div>
+        <div id="image-container"></div>
+    </section>
     <!-- How it works -->
 
     <section class="how-it-works">

@@ -1,3 +1,5 @@
+
+
 // hamburger
 function toggleMenu() {
     const navbarRight = document.querySelector('.navbar-right');
@@ -48,6 +50,7 @@ function updateCountdown() {
     document.getElementById('minutes').textContent = minutes + " " + ":";
     document.getElementById('seconds').textContent = seconds;
 }
+
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
@@ -123,4 +126,46 @@ function playVideo() {
     video.style.display = 'block';
 
     video.play();
+}
+
+
+
+
+// Path to your JSON file
+var api = 'data.json';
+
+// Fetch the JSON file and log the response
+fetch(api)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => {
+        const imageContainer = document.getElementById('image-container');
+        data.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+
+            const img = document.createElement('img');
+            img.src = item.image;
+            img.alt = item.title;
+
+            const priceOverlay = document.createElement('div');
+            priceOverlay.className = 'price-overlay';
+            priceOverlay.textContent = `${item.price} $`;
+
+            card.appendChild(img);
+            card.appendChild(priceOverlay);
+            imageContainer.appendChild(card);
+        });
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
+
+function toggleFetchData() {
+    var fetchDataSection = document.querySelector('.fetching-data');
+    fetchDataSection.style.display = fetchDataSection.style.display === 'none' || fetchDataSection.style.display === '' ? 'flex' : 'none';
 }
