@@ -1,4 +1,5 @@
 🌟 I'm excited to share recent JavaScript enhancements that elevate our web app experience! 🥳
+
 🍔 Added a seamless hamburger menu 🚀 that toggles between an ☰ icon and an X for intuitive navigation.
 📝 Introduced a stylish signup popup 🪪 that appears upon clicking the signup button, improving user engagement.
 ⏳ Implemented a dynamic countdown timer ⏳ updating every second until midnight, adding urgency.
